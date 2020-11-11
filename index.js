@@ -13,11 +13,11 @@ const tambahan = require("./lib/tambahan.js")
 const donasi = require("./lib/donasi.js");
 const info = require("./lib/info.js");
 /////////////////
-const BotName = 'REUZ BOT☄'; 
-const instagram = 'https://instagram.com/reuz.id'; 
-const telegram = 'https://t.me/reuzzz'; 
+const BotName = 'BESTIES CLANZ☄'; 
+const instagram = 'https://instagram.com/elementary_pancake'; 
+const telegram = 'https://t.me/'; 
 const kapanbotaktif = 'KETIKA HANYA DIAKTIFKAN'; 
-const youtube = 'https://www.youtube.com/c/reuz_id';
+const youtube = 'https://www.youtube.com/PixelCraftGaming';
 //const grupch1 = 'belum ada grup'; 
 //const grupch2 = 'belum ada grup' ; 
 const
@@ -68,7 +68,7 @@ conn.on('user-presence-update', json => console.log(json.id + ' presence is => '
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig:@reuz.id`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig:@elementary_pancake`)
 })
 
 conn.on('message-new', async(m) =>
@@ -107,7 +107,7 @@ else if (text == 'hai')
 {
 conn.sendMessage(id, tambahan.hai ,MessageType.text);
 }
-else if (text == 'assalamualaikum')
+else if (text == 'Selamat datang dibot Besties Clanz!')
 {
 conn.sendMessage(id, tambahan.ass ,MessageType.text);
 }
@@ -135,7 +135,7 @@ else if (text == 'Hai')
 {
 conn.sendMessage(id, tambahan.hai ,MessageType.text);
 }
-else if (text == 'Assalamualaikum')
+else if (text == 'Halo')
 {
 conn.sendMessage(id, tambahan.ass ,MessageType.text);
 }
